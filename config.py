@@ -31,7 +31,7 @@ PORT = os.environ.get("PORT", "3010")
 DB_URI = "mongodb+srv://Juicebot:Akshay8080@juicebot.7k41y.mongodb.net/?retryWrites=true&w=majority"
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "adlinkfly.in")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "https://adlinkfly.in/")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "226de7b8c1514400fa0749965f542d52f7fccf8a")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 84600)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
