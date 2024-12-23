@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7472767278:AAHbU3Q-S_CiRDBbTUkxJz6R5cQkvTi1W9M")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "29759992"))
@@ -19,20 +19,20 @@ APP_ID = int(os.environ.get("APP_ID", "29759992"))
 API_HASH = os.environ.get("API_HASH", "61f150cdca64b2916fa499d107393140")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002019359166"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002493155578"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "1707099600"))
 
 #Port
-PORT = os.environ.get("PORT", "3000")
+PORT = os.environ.get("PORT", "3010")
 
 #Database 
-DB_URI = "mongodb+srv://Akane:aloksingh@akane.wg38x.mongodb.net/?retryWrites=true&w=majority"
+DB_URI = "mongodb+srv://Juicebot:Akshay8080@juicebot.7k41y.mongodb.net/?retryWrites=true&w=majority"
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "modijiurl.com")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "8481b9e64b4f540b9737e787c6d6386ff44a5543")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "adlinkfly.in")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "226de7b8c1514400fa0749965f542d52f7fccf8a")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 84600)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID","gojfsi/2")
@@ -48,7 +48,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1707099600").split()):
+    for x in (os.environ.get("ADMINS", "7040944963").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
